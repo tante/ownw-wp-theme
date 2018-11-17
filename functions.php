@@ -39,8 +39,9 @@ function ownw_people4tag( $attrs ) {
 
 add_shortcode( 'ownw_taggedpeople', 'ownw_people4tag');
 
-/* show Topics for Person 
- * usage [ownw_topics person="Datenschutz"]
+/* show Topics for Person
+ * only works on a personal profile page 
+ * usage [ownw_topics]
  */
 function ownw_topics( $attrs ) {
 	$output = "<ul>";
