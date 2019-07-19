@@ -14,7 +14,9 @@ function ownw_people4tag( $attrs ) {
 	$args = array( 
 		'post_type' => 'page',
 		'category_name' => 'Profile',
-		'tag' => $data['tag']
+		'tag' => $data['tag'],
+		'order' => 'ASC',
+		'orderby' => 'title',
 	);
 	$query = new WP_Query( $args );
 	$output = ''; // '<div>';	
